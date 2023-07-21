@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import styles from "./home.module.css";
 import { Navbar } from "../Navbar/Navbar";
-import InstagramIcon from "@mui/icons-material/Instagram";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import TelegramIcon from "@mui/icons-material/Telegram";
+// import TelegramIcon from "@mui/icons-material/Telegram";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import HomeIcon from "@mui/icons-material/Home";
@@ -72,8 +73,8 @@ const Home = () => {
       <Navbar />
       <div className={styles.bodyContent}>
         <div className={styles.socialMedia}>
-          <a href="https://www.instagram.com/_raghav_289/">
-            <InstagramIcon style={{ fontSize: "1.25rem" }} />
+          <a href="https://www.linkedin.com/in/raghav-maheshwari-3a6946225/">
+            <LinkedInIcon style={{ fontSize: "1.25rem" }} />
           </a>
           <a href="https://twitter.com/BrijRaghav">
             <TwitterIcon style={{ fontSize: "1.25rem" }} />
@@ -93,9 +94,9 @@ const Home = () => {
             I'm very creative developer based in India, and I'm very passionate
             and dedicated to my work.
           </p>
-          <button type="button">
-            Say Hello <TelegramIcon style={{ fontSize: "1.75rem" }} />
-          </button>
+          <div className={styles.btn}>
+            <a href="#about">Know Me!</a>
+          </div>
         </div>
         <div className={styles.image}>
           <img src={require("../assets/myImage.jpeg")} alt=""></img>

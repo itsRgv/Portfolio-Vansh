@@ -46,8 +46,17 @@
     justify-content: space-evenly;
 }
 
-.linkToWebsite{
+.links{
     margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25rem;
+}
+
+.linkToWebsite{
+    /* margin-top: 2rem; */
     height: 4rem;
     width: 10rem;
     background-color: rgb(0, 0, 0);

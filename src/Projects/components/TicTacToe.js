@@ -29,8 +29,13 @@ export const TicTacToe = ({ value, handleClick }) => {
         </div>
       </div>
 
-      <div className={styles.linkToWebsite}>
-        <a href="..//">Go to website</a>
+      <div className={styles.links}>
+        <div className={styles.linkToWebsite}>
+          <a href="..//">Go to website</a>
+        </div>
+        <div className={styles.linkToWebsite}>
+          <a href=".,.,.">Go to Git Repo</a>
+        </div>
       </div>
     </div>
   );

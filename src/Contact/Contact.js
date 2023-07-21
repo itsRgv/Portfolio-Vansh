@@ -4,8 +4,9 @@ import styles from "./contact.module.css";
 import EmailIcon from "@mui/icons-material/Email";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import InstagramIcon from "@mui/icons-material/Instagram";
+// import InstagramIcon from "@mui/icons-material/Instagram";
 import SendIcon from "@mui/icons-material/Send";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import TelegramIcon from "@mui/icons-material/Telegram";
 // import TextField from "@mui/material/TextField";
 // import { Input } from "@mui/material";
@@ -59,9 +60,9 @@ export const Contact = () => {
         <div className={styles.whatsappBox}>
           <WhatsAppIcon />
           <h2>Whatsapp</h2>
-          <p>9123456789</p>
+          <p>9057574884</p>
           <button className={styles.leftButton}>
-            <a href="//api.whatsapp.com/send?phone=919123456789&text=Hey there, more information!">
+            <a href="//api.whatsapp.com/send?phone=919057574884&text=Hey there, more information!">
               Write me
             </a>
             <ArrowForwardIcon
@@ -71,12 +72,12 @@ export const Contact = () => {
           </button>
         </div>
         <div className={styles.instagramBox}>
-          <InstagramIcon />
+          <LinkedInIcon />
 
-          <h2>Instagram</h2>
-          <p>_raghav_289</p>
+          <h2>LinkedIn</h2>
+          <p>Raghav Maheshwari</p>
           <button className={styles.leftButton}>
-            <a href="https://api.instagram.com/oauth/authorize/?client_id=_raghav_289&redirect_uri=https://www.instagram.com/&response_type=token">
+            <a href="https://www.linkedin.com/in/raghav-maheshwari-itsrgv/">
               Write me
             </a>
             <ArrowForwardIcon

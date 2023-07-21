@@ -10,17 +10,18 @@ import { Footer } from "./Footer/Footer";
 
 const App = () => {
   return (
-    <div>
-      <div className={styles.container}>
-        <Home />
-        <About />
-        <Education />
-        <Skills />
-        <Projects />
-        <Contact />
-      </div>
+    // <div>
+    <div className={styles.container}>
+      <Home />
+      <About />
+      <Education />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
+
+    // </div>
   );
 };
 
