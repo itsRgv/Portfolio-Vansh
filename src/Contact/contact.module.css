@@ -1,0 +1,309 @@
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.left{
+    /* margin-top: 2rem; */
+    height: 50rem;
+    width: 30rem;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.emailBox{
+    height: 12.5rem;
+    width: 20rem;
+    border: 1px solid lightgray;
+    border: none;
+    border-radius: 15px;
+    box-shadow: -1px 1px 5px 0px rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.emailBox>h2{
+    margin-bottom: 0;
+}
+
+.emailBox>p{
+    margin-top: 0.5rem;
+    color: rgb(126, 122, 122);
+}
+
+.leftButton{
+    width: 6.5rem;
+    margin-top: 1rem;
+    background-color: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgb(126, 122, 122);
+    font-family: 'Poppins', sans-serif;
+    transition: all ease-in-out 0.3s;
+}
+
+.leftButton >a{
+    text-decoration: none;
+    color: rgb(126, 122, 122);;
+}
+
+.arrow{
+    animation: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+.leftButton:hover .arrow{
+    transform: translateX(.4rem);
+}
+
+.whatsappBox{
+    height: 12.5rem;
+    width: 20rem;
+    border: 1px solid lightgray;
+    border: none;
+    border-radius: 15px;
+    box-shadow: -1px 1px 15px 0px rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.whatsappBox>h2{
+    margin-bottom: 0;
+}
+
+.whatsappBox>p{
+    margin-top: 0.5rem;
+    color: rgb(126, 122, 122);
+}
+
+.instagramBox{
+    height: 12.5rem;
+    width: 20rem;
+    border: 1px solid lightgray;
+    border: none;
+    border-radius: 15px;
+    box-shadow: -1px 1px 25px 0px rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagramBox>h2{
+    margin-bottom: 0;
+}
+
+.instagramBox>p{
+    margin-top: 0.5rem;
+    color: rgb(126, 122, 122);
+}
+
+.right{
+    position: relative;
+    /* margin-top: 2rem; */
+    height: 50rem;
+    width: 30rem;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.name{
+    position: relative;
+    height: 4.5rem;
+    width: 25rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.name>input{
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(104, 102, 102);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 1.25rem;
+}
+
+.name>label{
+    z-index: 99;
+    position: absolute;
+    top: -0.85rem;
+    left: 1rem;
+    width: 3.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(104, 102, 102);
+    font-size: 0.9rem;
+}
+
+.email{
+    position: relative;
+    height: 4.5rem;
+    width: 25rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.email>input{
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(104, 102, 102);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 1.12rem;
+}
+
+.email>label{
+    z-index: 99;
+    position: absolute;
+    top: -0.85rem;
+    left: 1rem;
+    width: 2.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(104, 102, 102);
+    font-size: 0.9rem;
+}
+
+.message{
+    position: relative;
+    height: 10rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* border: 2px solid rgb(104, 102, 102); */
+    /* border: 2px solid red; */
+}
+
+.message>textarea{
+    height: 100%;
+    width: 100%;
+    /* border: none; */
+    border: 2px solid rgb(104, 102, 102);
+    border-radius: 10px;
+    font-size: 1rem;
+    padding-left: 1.1rem;
+    padding-top: 1rem;
+}
+.message>label{
+    z-index: 99;
+    position: absolute;
+    top: -1.3rem;
+    left: 1rem;
+    width: 4.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(104, 102, 102);
+    font-size: 0.9rem;
+}
+
+
+.right > button{
+    margin-top: 4rem;
+    height: 6rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    font-size: 1.25rem;
+}
+
+.right > button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.sendIcon{
+    margin-left: 1rem;
+}
+
+@media (max-width: 1350px){
+    .wrapper{
+        height: 200vh;
+        flex-direction: column;
+    }
+    .left{
+        height: 100vh;
+        justify-content: center;
+    }
+    .right{
+        height: 100vh;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px){
+    .left h1{
+        font-size: 1.75rem;
+    }
+    .emailBox,
+    .whatsappBox,
+    .instagramBox{
+        height: 12rem;
+        width: 17rem;
+    }
+    .right h1{
+        font-size: 1.75rem;
+    }
+    .name,
+    .email{
+        height: 4rem;
+        width: 22rem;
+    }
+    .message{
+        width: 22rem;
+    }
+}

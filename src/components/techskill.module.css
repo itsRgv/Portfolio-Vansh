@@ -1,0 +1,43 @@
+.container{
+    box-sizing: border-box;
+    height: 4rem;
+    width: 8rem;
+    background-color: rgba(0, 0, 0, 0.418);
+    margin: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.title{
+    font-size: 1.25rem;
+    color: black;
+    transition: all ease-in-out 0.3s;
+}
+
+.difficulty{
+    position: absolute;
+    visibility: hidden;
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    top: 1rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.container:hover .difficulty{
+   visibility: visible;
+   transform: translateY(2rem);
+}
+
+@media (max-width: 650px){
+    .container{
+        height: 3rem;
+        width: 6rem;
+    }
+    .title{
+        font-size: .9rem;
+    }
+
+}

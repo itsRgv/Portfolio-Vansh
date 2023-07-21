@@ -1,0 +1,129 @@
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    /* margin-left: 2rem; */
+}
+
+.header > h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.header>h2{
+    font-size: 1.1rem;
+    /* font-weight: 100; */
+    margin-top: 0;
+}
+
+.timeline{
+    /* position: relative; */
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    /* grid-template-rows: 15rem 15rem 15rem; */
+    color: gray;
+    margin-top: 5rem;
+}
+
+.timeline_date{
+    color: gray;
+    text-align:right;
+    align-self: end;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 20px;
+    margin-bottom: .15rem;
+}
+
+.timeline_middle{
+    position: relative;
+    background-color: gray;
+    bottom: 1.5rem;
+}
+
+.timeline_point{
+    position: absolute;
+    top: 10rem;
+    left: -6px;
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.timeline_component{
+    height: 7.5rem;
+    width: 15rem;
+    background-color: lightgray;
+    margin: 20px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0; */
+}
+
+.timeline_title{
+    margin: 0;
+    font-size: 1.25rem;
+}
+.timeline_para{
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.odd{
+    justify-self: end;
+}
+
+@media (max-width: 650px){
+    .header>h1{
+        font-size: 2rem;
+    }
+    .header>h2{
+        font-size: 1rem;
+    }
+    .timeline_date{
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin: 10px;
+        margin-bottom: .2rem;
+    }
+    .timeline_component{
+        height: 8rem;
+        width: 9rem;
+        background-color: lightgray;
+        margin: 15px;
+    }
+    .timeline_title{
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    .timeline_para{
+        /* margin: 0.5rem; */
+        font-size: 0.8rem;
+    }
+    .timeline_middle{
+        position: relative;
+        background-color: gray;
+        bottom: 0.5rem;
+    }
+    
+    .timeline_point{
+        position: absolute;
+        top: 9rem;
+        left: -6px;
+        height: 15px;
+        width: 15px;
+        background-color: gray;
+        border-radius: 50%;
+    }
+}

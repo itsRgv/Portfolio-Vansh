@@ -1,0 +1,83 @@
+.wrapper{
+    position: absolute;
+    height: 40rem;
+    width: 5rem;
+    /* background-color: red; */
+    left: 2rem;
+    top: 13rem;
+    /* margin-right: 25rem; */
+    /* margin-left: 2rem; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.navList{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navItem{
+    margin: 0;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navItem > a{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.navItem > a:hover {
+    box-shadow:  0 3px 5px 5px rgba(0, 0, 0, 0.65);
+    transform: translateY(-0.4rem);
+    border: none;
+}
+
+.linkText{
+    position: absolute;
+    visibility: hidden;
+    left: 1rem;
+    width: 5rem;
+    height: 2rem;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.navItem:hover .linkText{
+    visibility: visible;
+    transform: translateX(4rem);
+}
+
+@media (max-width: 850px){
+    .wrapper{
+        display: none;
+    }
+}

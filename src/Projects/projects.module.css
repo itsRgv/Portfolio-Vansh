@@ -1,0 +1,114 @@
+.displayBlur{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.headerTitle{
+    margin-top: 0;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.headerText{
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+.container{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projectTile{
+    position: relative;
+    margin: 0 2rem;
+    height: 20rem;
+    width: 20rem;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.projectTile>button{
+    position: absolute;
+    width: 6.5rem;
+    bottom: 1.5rem;
+    /* margin-top: 1rem; */
+    background-color: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgb(126, 122, 122);
+    font-family: 'Poppins', sans-serif;
+    animation: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+.arrow{
+    animation: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+.projectTile>button:hover .arrow{
+    
+    transform: translateX(.5rem);
+}
+
+@media (max-width: 1350px){
+    .container{
+        margin-top: 2rem;
+        grid-template-columns: 1fr;
+    }
+    .projectTile{
+        margin-bottom: 2rem;
+        height: 16rem;
+        width: 16rem;
+    }
+    .projectTile>h1{
+        font-size: 1.5rem;
+    }
+    .projectTile>p{
+        font-size: 0.9rem;
+        width: 15rem;
+    }
+}
+
+@media (max-width: 650px){
+    .headerTitle{
+        font-size: 2.5rem;
+    }
+    .headerText{
+        font-size: 1rem;
+    }
+}

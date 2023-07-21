@@ -1,0 +1,310 @@
+.container{
+    /* position: relative; */
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* box-sizing: border-box; */
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.logo > h1{
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Chela One', cursive;
+}
+
+.menuIcon{
+    display: none;
+}
+
+.bodyContent{
+    position: relative;
+    height: 25rem;
+    /* margin-left: 5rem; */
+    /* margin-right: 20rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMedia{
+    height: 10rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.socialMedia > a{
+    margin-bottom: 1rem;
+    color: black;
+    transition: all ease-in-out 0.3s;
+}
+
+.socialMedia>a:hover{
+    color: black;
+    transform: translateY(-2px);
+}
+
+.details{
+    width: 38rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-top: -4rem;
+}
+
+.details > h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.details>h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.details > button{
+    margin-top: 1.5rem;
+    height: 5rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid white; */
+    border: none;
+    background-color: rgb(59, 37, 37);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    font-size: 1rem;
+}
+
+.details > button:hover{
+    background-color: black;
+}
+
+.image{
+    margin-left: 3rem;
+}
+
+.image> img{
+    height: 20rem;
+    width: 20rem;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+@media (max-width: 1350px){
+    .bodyContent{
+        flex-direction: column-reverse;
+    }
+    .socialMedia{
+        align-self: flex-start;
+        position: absolute;
+        top: -3rem;
+        left: 7.5rem;
+    }
+    .image{
+        align-self: flex-end;
+        justify-self: start;
+        margin-right: 6rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.closeBtn,
+.navWrapper{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+@media (max-width: 850px){
+    .logo{
+        display: none;
+    }
+    .menuIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        height: 2.5rem;
+        width: 2.5rem;
+        top: 0rem;
+        left: 0rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        transition: all ease-in-out 0.3s;
+        z-index: 99;
+    }
+    
+    .menuIcon:hover{
+        background-color: rgb(216, 211, 211);
+    }
+    .menu{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 30rem;
+        width: 12.5rem;
+        background-color: white;
+        border-bottom: 1px solid rgb(240, 233, 233);
+        border-radius: 15px;
+        box-shadow: 1px -1px 15px 2px rgba(0, 0, 0, 0.25);
+        animation: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
+    }
+    .closeNav{
+        position: absolute;
+        right: 0rem;
+        top: 0.2rem;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+    }
+    .closeBtn{
+        display: flex;
+        color: rgb(153, 151, 151);
+    }
+    .closeBtn:hover{
+        color: black;
+    }
+    .navWrapper{
+        display: grid;
+        /* margin-top: 2.6rem; */
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .navComponent{
+        border: 1px solid lightgray;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 1.5rem;
+        border-right: none;
+    }
+    .navComponent:first-of-type{
+        border-top: none;
+    }
+    .navComponent:last-of-type{
+        border-bottom: none;
+    }
+    .navComponent>a{
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: rgb(153, 151, 151);
+        margin-left: 1rem;
+    }
+    .navComponent>a:hover{
+        color: black;
+    }
+}
+
+@media (max-width: 650px){
+    .bodyContent{
+        align-items: center;
+        justify-content: center;
+    }
+    .socialMedia{
+        align-self: flex-start;
+        position: absolute;
+        top: -0.9rem;
+        left: 11rem;
+        height: 7.5rem;
+
+    }
+    .image{
+        align-self: flex-end;
+        justify-self: start;
+        margin-right: 11rem;
+        margin-bottom: 3rem;
+    }
+    .image>img{
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+
+    .details{
+        width: 38rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0rem;
+        margin-top: -3rem;
+    }
+    
+    .details > h1{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    
+
+    .details>h2{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .details>p{
+        margin-top: 0rem;
+        text-align: center;
+        width: 20rem;
+    }
+    
+    .details > button{
+        margin-top: 1.5rem;
+        height: 5rem;
+        width: 15rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 500px){
+    .details>h1>span{
+        display: none;
+    }
+}

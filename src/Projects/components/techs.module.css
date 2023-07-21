@@ -1,0 +1,21 @@
+.wrapper{
+    box-sizing: border-box;
+    height: 4rem;
+    width: 8rem;
+    background-color: rgba(0, 0, 0, 0.418);
+    margin: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+}
+
+.wrapper:hover{
+    background-color: black;
+    color: white;
+}
