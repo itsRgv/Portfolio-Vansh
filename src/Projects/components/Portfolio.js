@@ -30,9 +30,6 @@ export const Portfolio = ({ value, handleClick }) => {
       </div>
       <div className={styles.links}>
         <div className={styles.linkToWebsite}>
-          <a href="..//">Go to website</a>
-        </div>
-        <div className={styles.linkToWebsite}>
           <a href="https://github.com/itsRgv/Portfolio-website">
             Go to Git Repo
           </a>
