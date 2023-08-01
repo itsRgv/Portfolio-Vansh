@@ -1,22 +1,21 @@
 import React from "react";
-import styles from "./portfolio.module.css";
+import styles from "./Prodeal.module.css";
 import { Techs } from "./Techs";
 import CloseIcon from "@mui/icons-material/Close";
 
-export const Portfolio = ({ value, handleClick }) => {
+const Prodeal = ({ value, handleClick }) => {
   return (
     <div className={`${value ? styles.wrapper : styles.none}`}>
       <button className={styles.closeBtn} onClick={handleClick}>
         <CloseIcon />
       </button>
       <div className={styles.header}>
-        <h1>Portfolio Website</h1>
+        <h1>Prodeal Website</h1>
         <p>
-          Welcome to my portfolio website! I'm a passionate web developer with a
-          flair for creating modern and responsive websites that leave a lasting
-          impression. With a strong foundation in HTML, CSS, and JavaScript, I
-          specialize in crafting intuitive user interfaces and seamless user
-          experiences.
+          ProDeal is an online platform where users can browse and purchase a
+          wide range of BOAT products . It offers a secure and convenient
+          shopping experience with features like product search, detailed
+          descriptions, and easy checkout options.
         </p>
       </div>
 
@@ -26,18 +25,22 @@ export const Portfolio = ({ value, handleClick }) => {
           <Techs value="HTML" />
           <Techs value="CSS" />
           <Techs value="React Js" />
+          <Techs value="Stripe" />
         </div>
       </div>
       <div className={styles.links}>
         <div className={styles.linkToWebsite}>
-          <a href="..//">Go to website</a>
+          <a href="https://github.com/itsRgv/ProDeal-FrontEnd">
+            Frontend Git Repo
+          </a>
         </div>
         <div className={styles.linkToWebsite}>
-          <a href="https://github.com/itsRgv/Portfolio-website">
-            Go to Git Repo
+          <a href="https://github.com/itsRgv/ProDeal-Backend">
+            Backend Git Repo
           </a>
         </div>
       </div>
     </div>
   );
 };
+export default Prodeal;

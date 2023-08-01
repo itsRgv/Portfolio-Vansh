@@ -14,7 +14,8 @@ export const Education = () => {
         <div className={`${styles.timeline_component} ${styles.odd}`}>
           <h2 className={styles.timeline_title}>B-Tech</h2>
           <p className={styles.timeline_para}>
-            I took admission in LNMIIT in CCE branch through JEE mains.
+            Currently persuing B-tech at LNMIIT in CCE branch. Current CGPA -
+            8.21
           </p>
         </div>
         <div className={styles.timeline_middle}>

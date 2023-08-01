@@ -3,10 +3,12 @@ import styles from "./projects.module.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { TicTacToe } from "./components/TicTacToe";
 import { Portfolio } from "./components/Portfolio";
+import Prodeal from "./components/Prodeal";
 
 export const Projects = () => {
   const [displayTTT, setDisplayTTT] = useState(false);
   const [displayPortfolio, setDisplayPortfolio] = useState(false);
+  const [displayProdeal, setDisplayProdeal] = useState(false);
   const handleViewMoreTTT = () => {
     // console.log(backgroundBlur);
     setDisplayTTT(!displayTTT);
@@ -14,11 +16,16 @@ export const Projects = () => {
   const handleViewMorePortfolio = () => {
     setDisplayPortfolio(!displayPortfolio);
   };
+  const handleViewMoreProdeal = () => {
+    setDisplayProdeal(!displayProdeal);
+  };
 
   return (
     <div
       className={`${
-        displayTTT || displayPortfolio ? styles.displayBlur : styles.wrapper
+        displayTTT || displayPortfolio || displayProdeal
+          ? styles.displayBlur
+          : styles.wrapper
       }`}
       id="portfolio"
     >
@@ -27,6 +34,7 @@ export const Projects = () => {
         value={displayPortfolio}
         handleClick={handleViewMorePortfolio}
       />
+      <Prodeal value={displayProdeal} handleClick={handleViewMoreProdeal} />
       <div className={styles.header}>
         <h1 className={styles.headerTitle}>Portfolio</h1>
         <h2 className={styles.headerText}>My Projects</h2>
@@ -54,6 +62,21 @@ export const Projects = () => {
             to know about me
           </p>
           <button onClick={handleViewMorePortfolio}>
+            View More
+            <ArrowForwardIcon
+              style={{ fontSize: "1rem" }}
+              className={styles.arrow}
+            />
+          </button>
+        </div>
+
+        <div className={styles.projectTile}>
+          <h1>Prodeal Website</h1>
+          <p>
+            This is a Ecom website where users can browse various products with
+            their price and description. Users can checkout their products too.
+          </p>
+          <button onClick={handleViewMoreProdeal}>
             View More
             <ArrowForwardIcon
               style={{ fontSize: "1rem" }}

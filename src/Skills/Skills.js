@@ -23,6 +23,7 @@ export const Skills = () => {
           <Techskill type="MySQL" level="Intermediate" />
           <Techskill type="Mongo DB" level="Intermediate" />
           <Techskill type="Mongoose" level="Intermediate" />
+          {/* <Techskill type="Stripe" level="Basic" /> */}
         </div>
       </div>
     </div>

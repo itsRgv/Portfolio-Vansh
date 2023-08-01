@@ -88,11 +88,13 @@ const Home = () => {
             Raghav Maheshwari <span>&#128075;</span>
           </h1>
 
-          <h2>Front end developer</h2>
+          <h2>Fullstack developer</h2>
 
           <p>
-            I'm very creative developer based in India, and I'm very passionate
-            and dedicated to my work.
+            Hello, I'm Raghav Maheshwari, a passionate Full Stack Developer with
+            a keen eye for crafting end-to-end solutions. I thrive on building
+            robust web applications that seamlessly merge front-end aesthetics
+            with powerful back-end functionality.
           </p>
           <div className={styles.btn}>
             <a href="#about">Know Me!</a>

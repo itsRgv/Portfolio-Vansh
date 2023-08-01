@@ -24,12 +24,12 @@
 }
 
 .details{
-    width: 60rem;
+    width: 65rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .image>img{
@@ -40,7 +40,8 @@
 }
 
 .content{
-    width: 25rem;
+    margin-top: 3.5rem;
+    width: 35rem;
     display: flex;
     flex-direction: column;
     /* align-items: flex-start;  */
@@ -48,7 +49,7 @@
 }
 
 .content > p{
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .download{

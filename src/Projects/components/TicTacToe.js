@@ -31,10 +31,10 @@ export const TicTacToe = ({ value, handleClick }) => {
 
       <div className={styles.links}>
         <div className={styles.linkToWebsite}>
-          <a href="..//">Go to website</a>
+          <a href="https://tic-tac-toe-eta-tawny.vercel.app/">Go to website</a>
         </div>
         <div className={styles.linkToWebsite}>
-          <a href=".,.,.">Go to Git Repo</a>
+          <a href="https://github.com/itsRgv/Tic-Tac-Toe">Go to Git Repo</a>
         </div>
       </div>
     </div>
