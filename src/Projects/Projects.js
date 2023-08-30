@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import styles from "./projects.module.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { TicTacToe } from "./components/TicTacToe";
+import { FOW } from "./components/TicTacToe";
 import { Portfolio } from "./components/Portfolio";
 import Prodeal from "./components/Prodeal";
 
 export const Projects = () => {
-  const [displayTTT, setDisplayTTT] = useState(false);
+  const [displayFOW, setDisplayFOW] = useState(false);
   const [displayPortfolio, setDisplayPortfolio] = useState(false);
   const [displayProdeal, setDisplayProdeal] = useState(false);
-  const handleViewMoreTTT = () => {
+  const handleViewMoreFOW = () => {
     // console.log(backgroundBlur);
-    setDisplayTTT(!displayTTT);
+    setDisplayFOW(!displayFOW);
   };
   const handleViewMorePortfolio = () => {
     setDisplayPortfolio(!displayPortfolio);
@@ -23,13 +23,13 @@ export const Projects = () => {
   return (
     <div
       className={`${
-        displayTTT || displayPortfolio || displayProdeal
+        displayFOW || displayPortfolio || displayProdeal
           ? styles.displayBlur
           : styles.wrapper
       }`}
       id="portfolio"
     >
-      <TicTacToe value={displayTTT} handleClick={handleViewMoreTTT} />
+      <FOW value={displayFOW} handleClick={handleViewMoreFOW} />
       <Portfolio
         value={displayPortfolio}
         handleClick={handleViewMorePortfolio}
@@ -41,12 +41,12 @@ export const Projects = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.projectTile}>
-          <h1>Tic-Tac-Toe Website</h1>
+          <h1>Food Ordering Website</h1>
           <p>
-            This is a tic-tac-toe game website where you can play tic-tac-toe
-            with your friend.
+            This is a food ordering website where users can log in and order
+            food.
           </p>
-          <button onClick={handleViewMoreTTT}>
+          <button onClick={handleViewMoreFOW}>
             View More
             <ArrowForwardIcon
               style={{ fontSize: "1rem" }}

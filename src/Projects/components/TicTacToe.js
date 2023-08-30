@@ -3,7 +3,7 @@ import styles from "./tictactoe.module.css";
 import CloseIcon from "@mui/icons-material/Close";
 import { Techs } from "./Techs";
 
-export const TicTacToe = ({ value, handleClick }) => {
+export const FOW = ({ value, handleClick }) => {
   //   console.log(value);
 
   return (
@@ -12,11 +12,11 @@ export const TicTacToe = ({ value, handleClick }) => {
         <CloseIcon />
       </button>
       <div className={styles.header}>
-        <h1>Tic-Tac-Toe Website</h1>
+        <h1>Food Ordering Website</h1>
         <p>
-          This is a standard Tic-Tac-Toe game website in which 2 people can play
-          against each other. This is a fully responsive website and very easy
-          to play.
+          This is a food ordering website which provides the functionalities of
+          login, logout. Users can create there account and create a bucket of
+          the food they like to order.
         </p>
       </div>
 
@@ -26,15 +26,20 @@ export const TicTacToe = ({ value, handleClick }) => {
           <Techs value="HTML" />
           <Techs value="CSS" />
           <Techs value="React Js" />
+          <Techs value="Node Js" />
         </div>
       </div>
 
       <div className={styles.links}>
         <div className={styles.linkToWebsite}>
-          <a href="https://tic-tac-toe-eta-tawny.vercel.app/">Go to website</a>
+          <a href="https://food-ordering-website-omega.vercel.app/">
+            Go to website
+          </a>
         </div>
         <div className={styles.linkToWebsite}>
-          <a href="https://github.com/itsRgv/Tic-Tac-Toe">Go to Git Repo</a>
+          <a href="https://github.com/itsRgv/Food-ordering-website">
+            Go to Git Repo
+          </a>
         </div>
       </div>
     </div>
