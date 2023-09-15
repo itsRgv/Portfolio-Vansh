@@ -13,7 +13,7 @@ export const Footer = () => {
       </div>
       <div className={styles.links}>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#portfolio">Projects</a>
         <a href="#skills">Skills</a>
       </div>
       <div className={styles.socialMedia}>

@@ -1,7 +1,7 @@
 .wrapper{
     box-sizing: border-box;
-    height: 4rem;
-    width: 8rem;
+    height: 3rem;
+    width: 6rem;
     background-color: rgba(0, 0, 0, 0.418);
     margin: 1.75rem;
     display: flex;
