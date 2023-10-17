@@ -17,11 +17,11 @@ export const Skills = () => {
           <Techskill type="JavaScript" level="Intermediate" />
           <Techskill type="Git" level="Intermediate" />
           <Techskill type="React" level="Intermediate" />
-          <Techskill type="Express Js" level="Intermediate" />
-          <Techskill type="PHP" level="Intermediate" />
-          <Techskill type="Node Js" level="Intermediate" />
+          <Techskill type="Android Dev" level="Intermediate" />
+          <Techskill type="Artificial Intelligence" level="Intermediate" />
+          <Techskill type="Deep Learning" level="Intermediate" />
           <Techskill type="MySQL" level="Intermediate" />
-          <Techskill type="Mongo DB" level="Intermediate" />
+          <Techskill type="Firebase" level="Intermediate" />
           {/* <Techskill type="Mongoose" level="Intermediate" /> */}
           {/* <Techskill type="Stripe" level="Basic" /> */}
         </div>

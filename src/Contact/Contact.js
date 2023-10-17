@@ -46,9 +46,9 @@ export const Contact = () => {
         <div className={styles.emailBox}>
           <EmailIcon />
           <h2>Email</h2>
-          <p>raghav4u03@gmail.com</p>
+          <p>vansh012345gupta@gmail.com</p>
           <button className={styles.leftButton}>
-            <a href="mailto:raghav4u03@gmail.com?subject=SendMail&body=Description">
+            <a href="mailto:vansh012345gupta@gmail.com?subject=SendMail&body=Description">
               Write me
             </a>
             <ArrowForwardIcon
@@ -60,7 +60,7 @@ export const Contact = () => {
         <div className={styles.whatsappBox}>
           <WhatsAppIcon />
           <h2>Whatsapp</h2>
-          <p>9057574884</p>
+          <p>9462860600</p>
           <button className={styles.leftButton}>
             <a href="//api.whatsapp.com/send?phone=919057574884&text=Hey there, more information!">
               Write me
@@ -75,9 +75,9 @@ export const Contact = () => {
           <LinkedInIcon />
 
           <h2>LinkedIn</h2>
-          <p>Raghav Maheshwari</p>
+          <p>Vansh Gupta</p>
           <button className={styles.leftButton}>
-            <a href="https://www.linkedin.com/in/raghav-maheshwari-itsrgv/">
+            <a href="https://www.linkedin.com/in/vansh-gupta-1bb543200">
               Write me
             </a>
             <ArrowForwardIcon

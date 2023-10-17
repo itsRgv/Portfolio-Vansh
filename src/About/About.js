@@ -12,21 +12,17 @@ export const About = () => {
       </div>
       <div className={styles.details}>
         <div className={styles.image}>
-          <img src={require("../assets/myImage.jpeg")} alt=""></img>
+          <img src={require("../assets/WhatsApp Image 2023-10-18 at 12.10.45 AM.jpeg")} alt=""></img>
         </div>
         <div className={styles.content}>
           <p>
-            I am well-versed in a wide array of technologies, including
-            front-end languages such as HTML, CSS, and JavaScript, and modern
-            frameworks like React. On the back-end, I excel in server-side
-            languages like Node.js and PHP, and I am proficient in working with
-            databases such as MySQL, MongoDB.
+          I excel in project coordination, design, and programming.
+Fluent in C++ and Android Development, I possess comprehensive project-building experience, including
+code optimization and validation. My track record showcases my dedication to crafting exceptional Android
+applications that deliver seamless user experiences.
             <br></br>
             On my portfolio, you will find a collection of diverse projects that
-            demonstrate my abilities as a full-stack developer. From creating
-            responsive e-commerce platforms to building RESTful APIs and
-            integrating third-party services, each project showcases my
-            commitment to clean code, scalability, and optimized performance.
+            demonstrate my abilities as a software engineer. From creating responsive Android Application to building Deep Learning models and integrating AI model with android apps, each project showcases my commitment to clean code, scalability, and optimized performance.
           </p>
           <a
             href={ResumePdf}

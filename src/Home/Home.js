@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div className={styles.container} id="home">
       <div className={styles.logo}>
-        <h1>RM</h1>
+        <h1>VG</h1>
       </div>
       <div className={`${styles.menuIcon}`} onClick={changeNavDisplay}>
         <MenuIcon style={{ fontSize: "2rem" }} />
@@ -73,35 +73,35 @@ const Home = () => {
       <Navbar />
       <div className={styles.bodyContent}>
         <div className={styles.socialMedia}>
-          <a href="https://www.linkedin.com/in/raghav-maheshwari-3a6946225/">
+          <a href="https://www.linkedin.com/in/vansh-gupta-1bb543200">
             <LinkedInIcon style={{ fontSize: "1.25rem" }} />
           </a>
-          <a href="https://twitter.com/BrijRaghav">
-            <TwitterIcon style={{ fontSize: "1.25rem" }} />
-          </a>
-          <a href="https://github.com/itsRgv">
+  
+          <a href="github.com/vansh482">
             <GitHubIcon style={{ fontSize: "1.25rem" }} />
           </a>
         </div>
         <div className={styles.details}>
           <h1>
-            Raghav Maheshwari <span>&#128075;</span>
+            Vansh Gupta <span>&#128075;</span>
           </h1>
 
-          <h2>Fullstack developer</h2>
+          <h2>Aspiring Software Engineer</h2>
 
           <p>
-            Hello, I'm Raghav Maheshwari, a passionate Full Stack Developer with
-            a keen eye for crafting end-to-end solutions. I thrive on building
-            robust web applications that seamlessly merge front-end aesthetics
-            with powerful back-end functionality.
+          I am an aspiring software engineer with a strong focus on Android development. With a proven ability to lead
+and collaborate on cross-functional teams, I have successfully contributed to the development, testing, deploy-
+ment, and maintenance of software applications. I excel in project coordination, design, and programming.
+Fluent in C++ and Android Development, I possess comprehensive project-building experience, including
+code optimization and validation. My track record showcases my dedication to crafting exceptional Android
+applications that deliver seamless user experiences.
           </p>
           <div className={styles.btn}>
             <a href="#about">Know Me!</a>
           </div>
         </div>
         <div className={styles.image}>
-          <img src={require("../assets/myImage.jpeg")} alt=""></img>
+          <img src={require("../assets/WhatsApp Image 2023-10-18 at 12.10.45 AM.jpeg")} alt=""></img>
         </div>
       </div>
     </div>

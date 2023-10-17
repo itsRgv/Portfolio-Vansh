@@ -52,8 +52,8 @@ export const Projects = () => {
 
       <div className={styles.container}>
         <div className={styles.projectTile}>
-          <h1>InstaChat</h1>
-          <p>This is a real-time chat app with login logout functionalities.</p>
+          <h1>Padh.le</h1>
+          <p>This is a personal to-do list app with AI driven analysis of task and efficient response to queries</p>
           <button onClick={handleViewMoreInstaChat}>
             View More
             <ArrowForwardIcon
@@ -64,9 +64,9 @@ export const Projects = () => {
         </div>
 
         <div className={styles.projectTile}>
-          <h1>Food Ordering Website</h1>
+          <h1>Amul Parlour App</h1>
           <p>
-            This is a food ordering website where users can log in and order
+            This is a food ordering app where users can log in and order
             food.
           </p>
           <button onClick={handleViewMoreFOW}>
@@ -94,10 +94,9 @@ export const Projects = () => {
         </div> */}
 
         <div className={styles.projectTile}>
-          <h1>Prodeal Website</h1>
+          <h1>Sales Prediction</h1>
           <p>
-            This is a Ecom website where users can browse various products with
-            their price and description. Users can checkout their products too.
+          This is a Sales prediction Deep Learning Model which use LSTM model.
           </p>
           <button onClick={handleViewMoreProdeal}>
             View More

@@ -14,8 +14,8 @@ export const Education = () => {
         <div className={`${styles.timeline_component} ${styles.odd}`}>
           <h2 className={styles.timeline_title}>B-Tech</h2>
           <p className={styles.timeline_para}>
-            Currently persuing B-tech at LNMIIT in CCE branch. Current CGPA -
-            8.21
+            Currently persuing B-tech at LNMIIT in CSE branch. Current CGPA -
+            7.56
           </p>
         </div>
         <div className={styles.timeline_middle}>
@@ -34,7 +34,7 @@ export const Education = () => {
             12<sup>th</sup> Grade
           </h2>
           <p className={styles.timeline_para}>
-            I did my 12<sup>th</sup> grade from MPS jaipur. There I secured 96%
+            I did my 12<sup>th</sup> grade from Shiksha High School Bikaner. There I secured 93.2%
             in 12<sup>th</sup> board.
           </p>
         </div>
@@ -44,7 +44,7 @@ export const Education = () => {
             10<sup>th</sup> Grade
           </h2>
           <p className={styles.timeline_para}>
-            I did my 10<sup>th</sup> grade from MPS jaipur. There I secured 96%
+            I did my 10<sup>th</sup> grade from RNRSV Bikaner. There I secured 89%
             in 10<sup>th</sup> board.
           </p>
         </div>
